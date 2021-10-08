@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import "antd/dist/antd.css";
+import { Calendar } from 'antd';
+import $ from 'jquery';
+import 'bootstrap';
+global.jQuery = $;
+require('bootstrap');
 
-function App() {
+//global.jQuery = require('jquery');
+//window.$ = window.jQuery = jQuery;
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{
+      display: 'block', width: 1000, height: 300, padding: 30
+    }}>
+      <Calendar onChange={(value) => {
+        alert(`You selected ${value.format('YYYY-MM-DD')}`)
+      }} />
     </div>
   );
 }
-
-export default App;
