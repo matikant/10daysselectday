@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="https://img-premium.flaticon.com/png/512/2632/premium/2632943.png?token=exp=1633606321~hmac=b0193d9919788ad73cea5f2b6aae49ec">
+    <!--link rel="shortcut icon" href="https://img-premium.flaticon.com/png/512/2632/premium/2632943.png?token=exp=1633606321~hmac=b0193d9919788ad73cea5f2b6aae49ec"-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -34,8 +35,8 @@
           <h3>Please select<br>your day.</h3>
           <br>
           <button class="choice" id="green" data-confirm-text="Confirm"><i class="fas fa-check-circle" style="color:#81B725"></i> Yeah! I am available</button><br>
-          <button class="choice" id="yellow" data-confirm-text="Confirm"><i class="fa fa-minus-circle" style="color:#F4C253"></i> Nah, not really</button><br>
-          <button class="choice" id="red" data-confirm-text="Confirm"><i class="fa fa-times-circle" style="color:#E2410A"></i> Really busy</button><br>
+          <button class="choice" id="yellow" data-confirm-text="Confirm"><i class="fa fa-minus-circle" style="color:#F4C253;font-size:18px"></i> Nah, not really</button><br>
+          <button class="choice" id="red" data-confirm-text="Confirm"><i class="fa fa-times-circle" style="color:#E2410A;font-size:18px"></i> Really busy</button><br>
           <br>
           <button class="done">done</button>
         </div>
@@ -48,64 +49,9 @@
           <h3><img src="http://hillrag.com/wp-content/uploads/2017/11/rabbit-pic.jpg" alt="Avatar man"> username's calendar<h3>
         </div>
         <div id="root"></div>
+        <br>
       </div>
     </div>
-
-    <script>
-    let cntg = true;
-    let cnty = true;
-    let cntr = true;
-    $(document).ready(function(){
-      $("#green").click(function(){
-        if (cntg) {
-          $(this).button("confirm");
-          $("#yellow").prop("disabled", true);
-          $("#red").prop("disabled", true);
-          $(".done").prop("disabled", true);
-          cntg = false;
-        }
-        else {
-          $(this).button("reset");
-          $("#yellow").prop("disabled", false);
-          $("#red").prop("disabled", false);
-          $(".done").prop("disabled", false);
-          cntg = true;
-        }
-      });  
-      $("#yellow").click(function(){
-        if (cnty) {
-          $(this).button("confirm");
-          $("#green").prop("disabled", true);
-          $("#red").prop("disabled", true);
-          $(".done").prop("disabled", true);
-          cnty = false;
-        }
-        else {
-          $(this).button("reset");
-          $("#green").prop("disabled", false);
-          $("#red").prop("disabled", false);
-          $(".done").prop("disabled", false);
-          cnty = true;
-        }
-      });
-      $("#red").click(function(){
-        if (cntr) {
-          $(this).button("confirm");
-          $("#yellow").prop("disabled", true);
-          $("#green").prop("disabled", true);
-          $(".done").prop("disabled", true);
-          cntr = false;
-        }
-        else {
-          $(this).button("reset");
-          $("#yellow").prop("disabled", false);
-          $("#green").prop("disabled", false);
-          $(".done").prop("disabled", false);
-          cntr = true;
-        }
-      });  
-    });
-    </script>
 
     <!--
       This HTML file is a template.
@@ -117,5 +63,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <script src="s.js"></script>
   </body>
 </html>
