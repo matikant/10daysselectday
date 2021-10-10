@@ -1,7 +1,7 @@
 *{
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 1rem;
   padding-left: 0;
 }
 
@@ -10,6 +10,37 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#one{
+  width: 20rem;
+  height: 20rem;
+  background-color: #81B725;
+  position: absolute;
+  right: 0;
+  top:0 ;
+  filter: blur(9rem);
+  opacity: 60%;
+}
+#two{
+  width: 40rem;
+  height: 40rem;
+  background-color: #81B725;
+  position: absolute;
+  left: 0;
+  bottom:0 ;
+  filter: blur(9rem);
+  opacity: 60%;
+}
+#three{
+  width: 15rem;
+  height: 15rem;
+  background-color: #E2410A;
+  position: absolute;
+  right: 0;
+  bottom:0 ;
+  filter: blur(8rem);
+  opacity: 70%;
 }
 
 .leftbg {
@@ -29,7 +60,7 @@ body {
   z-index: 1;
   overflow-x: hidden;
   right: 0;
-  background-image: url("https://cdn.discordapp.com/attachments/850757783644274719/895991283074625536/background.png");
+  background-color: #F4C253;
 }
 
 .onleftbg {
@@ -46,8 +77,8 @@ body {
 }
 
 .left img {
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
 }
 
@@ -57,17 +88,28 @@ body {
   text-align: center;
 }
 
+.calendar {
+  display: 'block';
+}
+
+.calendarpadding {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 1rem 1rem 0rem 1rem;
+  box-shadow: 0.02rem 0.02rem 0.8rem 0.08rem #8d9aa8;
+}
+
 .done {
   border: none;
   background-color: #2D4863;
   width: 70%;
-  height: 40px;
-  border-radius: 12px;
+  height: 2rem;
+  border-radius: 1rem;
   color: white;
   text-align: center;
   transition-duration: 0.2s;
-  font-weight: 300;
-  font-size: 14px;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -78,22 +120,16 @@ body {
 
 .choice {
   border: none;
-  border-radius: 8px;
+  border-radius: 1rem;
   text-align: left;
   background-color: white;
   transition-duration: 0.2s;
-  font-weight: 300;
-  font-size: 14px;
-  margin: 0;
-}
-
-.choice:hover {
-  background-color: #E5E5E5;
+  font-size: 1rem;
 }
 
 h3 {
   text-align: left;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 1.6rem;
   margin: 0;
 }

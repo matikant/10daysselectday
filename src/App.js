@@ -7,13 +7,12 @@ import './index.css';
 const Button = styled.button`
   cursor: pointer;
   border: none;
-  border-radius: 8px;
+  border-radius: 1rem;
   text-align: left;
   background-color: white;
   transition-duration: 0.2s;
-  font-weight: 300;
-  font-size: 14px;
-  margin: 0;
+  font-size: 0.9rem;
+  padding: 0.4rem 0rem 0.4rem 0rem;
 `;
 
 const ButtonToggle = styled(Button)`
@@ -33,14 +32,12 @@ const DoneButton = styled.button`
   border: none;
   background-color: #2D4863;
   width: 70%;
-  height: 40px;
-  border-radius: 12px;
+  height: 2.5rem;
+  border-radius: 1rem;
   color: white;
   text-align: center;
   transition-duration: 0.2s;
-  font-weight: 300;
-  font-size: 14px;
-  margin: 0;
+  font-size: 0.9rem;
 `;
 
 function sayDone() {
@@ -58,7 +55,6 @@ export default function App() {
           <div class='left'>
             <h3>Please select<br></br>your day.</h3>
             <br></br>
-            
             <ButtonGroup>
               {types.map(type => (
                 <ButtonToggle
@@ -71,7 +67,6 @@ export default function App() {
               ))}
             </ButtonGroup>
             <br></br>
-            
             <DoneButton onClick={sayDone}>Done</DoneButton>
 
           </div>
@@ -79,11 +74,15 @@ export default function App() {
       </div>
     
       <div class="rightbg">
+        <div class="circle" id="one"></div>
+        <div class="circle" id="two"></div>
+        <div class="circle" id="three"></div>
         <div class="centered">
           <div class="left">
             <h3><img src="http://hillrag.com/wp-content/uploads/2017/11/rabbit-pic.jpg" alt="Avatar man"></img>  username's calendar</h3>
           </div>
-          <div style={{display: 'block', padding: 20}}>
+          <div class="calendarpadding">
+          <div class="calendar">
             <Calendar onChange={(value) => {
               let i = 0;
               for (;i<3;i++) {
@@ -92,7 +91,7 @@ export default function App() {
                 }
               }
             }} />
-          </div>
+          </div></div>
           <br></br>
         </div>
       </div>  
