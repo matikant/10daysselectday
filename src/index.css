@@ -12,37 +12,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#one{
-  width: 20rem;
-  height: 20rem;
-  background-color: #81B725;
-  position: absolute;
-  right: 0;
-  top:0 ;
-  filter: blur(9rem);
-  opacity: 60%;
-}
-#two{
-  width: 40rem;
-  height: 40rem;
-  background-color: #81B725;
-  position: absolute;
-  left: 0;
-  bottom:0 ;
-  filter: blur(9rem);
-  opacity: 60%;
-}
-#three{
-  width: 15rem;
-  height: 15rem;
-  background-color: #E2410A;
-  position: absolute;
-  right: 0;
-  bottom:0 ;
-  filter: blur(8rem);
-  opacity: 70%;
-}
-
 .leftbg {
   height: 100%;
   width: 25%;
@@ -57,7 +26,6 @@ body {
   height: 100%;
   width: 75%;
   position: fixed;
-  z-index: 1;
   overflow-x: hidden;
   right: 0;
   background-color: #F4C253;
@@ -90,6 +58,7 @@ body {
 
 .calendar {
   display: 'block';
+  z-index: 2;
 }
 
 .calendarpadding {
@@ -98,33 +67,7 @@ body {
   padding: 0.5rem;
   margin: 1rem 1rem 0rem 1rem;
   box-shadow: 0.02rem 0.02rem 0.8rem 0.08rem #8d9aa8;
-}
-
-.done {
-  border: none;
-  background-color: #2D4863;
-  width: 70%;
-  height: 2rem;
-  border-radius: 1rem;
-  color: white;
-  text-align: center;
-  transition-duration: 0.2s;
-  font-size: 1rem;
-  margin: 0;
-}
-
-.done:hover {
-  background-color: #d5e6f7;
-  color: #2D4863
-}
-
-.choice {
-  border: none;
-  border-radius: 1rem;
-  text-align: left;
-  background-color: white;
-  transition-duration: 0.2s;
-  font-size: 1rem;
+  z-index: 1;
 }
 
 h3 {

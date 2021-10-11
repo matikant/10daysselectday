@@ -40,6 +40,42 @@ const DoneButton = styled.button`
   font-size: 0.9rem;
 `;
 
+const One = styled.div`
+  width: 20rem;
+  height: 20rem;
+  background-color: #81B725;
+  position: absolute;
+  right: 0;
+  top:0 ;
+  filter: blur(9rem);
+  opacity: 60%;
+  z-index: -1;
+`;
+
+const Two = styled.div`
+  width: 40rem;
+  height: 40rem;
+  background-color: #81B725;
+  position: absolute;
+  left: 0;
+  bottom:0 ;
+  filter: blur(9rem);
+  opacity: 60%;
+  z-index: -1;
+`;
+
+const Three = styled.div`
+  width: 15rem;
+  height: 15rem;
+  background-color: #E2410A;
+  position: absolute;
+  right: 0;
+  bottom:0 ;
+  filter: blur(8rem);
+  opacity: 70%;
+  z-index: -1;
+`;
+
 function sayDone() {
   alert('Doneeee!');
 }
@@ -74,9 +110,9 @@ export default function App() {
       </div>
     
       <div class="rightbg">
-        <div class="circle" id="one"></div>
-        <div class="circle" id="two"></div>
-        <div class="circle" id="three"></div>
+        <One></One>
+        <Two></Two>
+        <Three></Three>
         <div class="centered">
           <div class="left">
             <h3><img src="http://hillrag.com/wp-content/uploads/2017/11/rabbit-pic.jpg" alt="Avatar man"></img>  username's calendar</h3>
