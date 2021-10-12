@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting <del>Started</del> ended with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 อย่าไปใช้้้้้ เตือนแล้วนะ!
