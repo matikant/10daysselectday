@@ -1,8 +1,6 @@
 # Getting <del>Started</del> ended with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-อย่าไปใช้้้้้ เตือนแล้วนะ!
-![itoldya](https://pbs.twimg.com/media/Dcg8YDFV0AI1902.jpg)
 
 ## Available Scripts
 
